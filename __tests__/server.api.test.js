@@ -16,6 +16,12 @@ const mockEmployee = {
   salary: 100001,
 };
 
+test('GET / sends the message "Welcome to the Fullstack Employees API."', async () => {
+  const response = await request(app).get("/");
+  expect(response.status).toBe(200);
+  expect(response.text).toBe("Welcome to the Fullstack Employees API.");
+});
+
 test("GET /employees sends all employees", async () => {
   db.query.mockResolvedValue({ rows: [mockEmployee, mockEmployee] });
   const response = await request(app).get("/employees");
