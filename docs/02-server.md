@@ -9,7 +9,8 @@ Complete the rest of the queries in `db/queries/employees`.
 ## Write the Express routes
 
 Now that your database is up and running, build the rest of your server to serve the
-following routes!
+following routes. Remember to use the appropriate body-parsing and error-handling
+middleware!
 
 - `GET /` sends the message "Welcome to the Fullstack Employees API."
 - `GET /employees` sends array of all employees
