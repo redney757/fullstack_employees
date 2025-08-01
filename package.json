@@ -17,7 +17,8 @@
   },
   "dependencies": {
     "express": "^5.1.0",
-    "pg": "^8.14.1"
+    "pg": "^8.14.1",
+    "vite": "^7.0.6"
   },
   "devDependencies": {
     "supertest": "^7.1.0",
